@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1 (Python 3.9.6 on darwin)" generated="20211023 16:04:40.250" rpa="false" schemaversion="2">
+<suite id="s1" name="Mobileautomation" source="/Users/maicmiller/Documents/GitHub/MobileAutomation-PrimeHero/tests/mobileautomation.robot">
+<test id="s1-t1" name="Caso de Teste 02: Logar no YouTube">
+<kw name="Abrir aplicativo" type="SETUP">
+<kw name="Set Appium Timeout" library="AppiumLibrary">
+<arg>60</arg>
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<status status="PASS" starttime="20211023 16:04:40.652" endtime="20211023 16:04:40.653"/>
+</kw>
+<kw name="Open Application" library="AppiumLibrary">
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=RX8M80897QT</arg>
+<arg>automationName=uiautomator2</arg>
+<arg>appPackage=com.google.android.youtube</arg>
+<arg>appActivity=com.google.android.youtube.HomeActivity</arg>
+<arg>autoGrantPermissions=true</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20211023 16:04:40.653" endtime="20211023 16:05:07.135"/>
+</kw>
+<status status="PASS" starttime="20211023 16:04:40.650" endtime="20211023 16:05:07.135"/>
+</kw>
+<kw name="Abrir App">
+<kw name="Set Appium Timeout" library="AppiumLibrary">
+<arg>60</arg>
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<status status="PASS" starttime="20211023 16:05:07.137" endtime="20211023 16:05:07.139"/>
+</kw>
+<kw name="Open Application" library="AppiumLibrary">
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=RX8M80897QT</arg>
+<arg>automationName=uiautomator2</arg>
+<arg>appPackage=com.google.android.youtube</arg>
+<arg>appActivity=com.google.android.youtube.HomeActivity</arg>
+<arg>autoGrantPermissions=true</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20211023 16:05:07.140" endtime="20211023 16:05:38.413"/>
+</kw>
+<status status="PASS" starttime="20211023 16:05:07.136" endtime="20211023 16:05:38.414"/>
+</kw>
+<kw name="Logar no aplicativo com a conta x">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>accessibility_id=Conta</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211023 16:05:38.415" endtime="20211023 16:05:44.614"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>accessibility_id=Conta</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211023 16:05:44.621" level="INFO">Clicking element 'accessibility_id=Conta'.</msg>
+<status status="PASS" starttime="20211023 16:05:44.614" endtime="20211023 16:05:45.033"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//android.widget.TextView[@text='FAZER LOGIN']</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211023 16:05:45.039" level="INFO">Clicking element 'xpath=//android.widget.TextView[@text='FAZER LOGIN']'.</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20211023 16:05:47.105" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-1.png"&gt;&lt;img src="appium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211023 16:05:46.076" endtime="20211023 16:05:47.106"/>
+</kw>
+<msg timestamp="20211023 16:05:47.114" level="FAIL">ValueError: Element locator 'xpath=//android.widget.TextView[@text='FAZER LOGIN']' did not match any elements.</msg>
+<status status="FAIL" starttime="20211023 16:05:45.034" endtime="20211023 16:05:47.114"/>
+</kw>
+<kw name="Input Element">
+<arg>id=identifierId</arg>
+<arg>email@gmail.com</arg>
+<status status="NOT RUN" starttime="20211023 16:05:47.126" endtime="20211023 16:05:47.127"/>
+</kw>
+<status status="FAIL" starttime="20211023 16:05:38.415" endtime="20211023 16:05:47.129"/>
+</kw>
+<kw name="Fechar aplicativo" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20211023 16:05:48.115" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-2.png"&gt;&lt;img src="appium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211023 16:05:47.132" endtime="20211023 16:05:48.115"/>
+</kw>
+<kw name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" starttime="20211023 16:05:48.116" endtime="20211023 16:05:48.813"/>
+</kw>
+<status status="PASS" starttime="20211023 16:05:47.131" endtime="20211023 16:05:48.814"/>
+</kw>
+<tag>LOGAR</tag>
+<status status="FAIL" starttime="20211023 16:04:40.649" endtime="20211023 16:05:48.815">ValueError: Element locator 'xpath=//android.widget.TextView[@text='FAZER LOGIN']' did not match any elements.</status>
+</test>
+<doc>Testes Mobile</doc>
+<status status="FAIL" starttime="20211023 16:04:40.253" endtime="20211023 16:05:48.821"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">LOGAR</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Mobileautomation">Mobileautomation</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
