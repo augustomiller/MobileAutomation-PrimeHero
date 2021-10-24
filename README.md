@@ -101,6 +101,7 @@ export ANDROID_HOME=//Users/<utilizador>/Library/Android/sdk
 export PATH=$ANDROID_HOME/platform-tools:$PATH
 export PATH=$ANDROID_HOME/tools:$PATH
 export PATH=$ANDROID_HOME/tools/bin:$PATH
+export PATH=$ANDROID_HOME/tools/lib:$PATH
 export PATH=$ANDROID_HOME/emulator:$PATH
 ```
 Verificando se funcionou
@@ -134,7 +135,7 @@ sudo uiautomatorviewer
 ### podemos fechar o Android Studio, vamos levantar o emulator via terminal.
 
 ```script
-emulator @primeheroAVD &
+emulator @stffAVD &
 ```
 ![12](https://user-images.githubusercontent.com/990877/134573510-4dabb3de-78b6-46cb-9598-6530af5aa5f6.png)
 
