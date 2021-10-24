@@ -1,7 +1,7 @@
 
 <div align="center">
   
-# Projeto Prime Hero
+# Programa Prime Hero Academy
   
 ## Testes Mobile 📱
   
