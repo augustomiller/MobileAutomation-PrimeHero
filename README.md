@@ -123,7 +123,6 @@ Comando uiautomatorviewer
 ```script
 sudo uiautomatorviewer
 ```
-![7](https://user-images.githubusercontent.com/990877/134571552-bd24b3f6-12ce-4425-9cb6-9e894af14331.png)
 
 ## Criar um novo Virtual Device
 
