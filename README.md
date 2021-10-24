@@ -28,6 +28,8 @@ Objetivo 🎯  &nbsp;&nbsp;Utilizando as melhores tecnologias atuais como, Robot
 
 <br>
 
+![robot](https://user-images.githubusercontent.com/990877/138452988-d59ff453-46e6-46a3-94c7-555b6346d380.png)
+
 ![Screen Shot 2021-10-24 at 09 51 08 (2)](https://user-images.githubusercontent.com/990877/138594990-b3c041fb-ab23-4318-848c-f007385524a1.png)
 
 
@@ -263,6 +265,8 @@ am start -n com.sec.android.app.popupcalculator/.calculator
 ```
 
 ##
+
+![Thats Robot](https://user-images.githubusercontent.com/990877/129357114-76c16f53-b485-4c59-b33a-5975a32e083b.png)
 
 ## License
 
