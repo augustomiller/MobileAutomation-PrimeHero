@@ -28,7 +28,8 @@ Objetivo 🎯  &nbsp;&nbsp;Utilizando as melhores tecnologias atuais como, Java,
 
 <br>
 
-![homeScreen](https://user-images.githubusercontent.com/990877/134563936-3498f667-9a3d-46a2-ac3d-3c3710dba50d.png)
+![Screen Shot 2021-10-24 at 09 51 08 (2)](https://user-images.githubusercontent.com/990877/138594990-b3c041fb-ab23-4318-848c-f007385524a1.png)
+
 
 <p align="center">
   <a href="https://developer.android.com/">Android Studio</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
