@@ -49,25 +49,28 @@ Fechar aplicativo
 # Caso de Teste 01: Logar no YouTube #
 ######################################
 Dado que o cliente esteja na tela de Home
-    Wait Until Element Is Visible       xpath=//android.widget.ImageView[@content-desc="Pesquisar"]
-    Wait Until Element Is Visible       accessibility_id=YouTube
+    Wait Until Element Is Visible       xpath=//android.widget.ImageView[@content-desc="Search"]
+    Wait Until Element Is Visible       accessibility_id=Search
 
 E pesquise um vídeo sobre "${PESQUISA_VIDEO}"
-    Click Element                       accessibility_id=Pesquisar
+    Click Element                       accessibility_id=Search
+    Wait Until Page Contains Element    id=search_edit_text       5s
     Input Text                          id=search_edit_text         ${PESQUISA_VIDEO}
     Press Keycode                       66
 
 E acessar o canal da Prime
-    Wait Until Element Is Visible       accessibility_id=Prime Experts - Parceria entre Prime Control e UniBrasil - 3 minutos e 38 segundos - Ir ao canal - Prime Control - 90 visualizações - há 1 ano - assistir o vídeo
-    Click Element                       accessibility_id=Prime Experts - Parceria entre Prime Control e UniBrasil - 3 minutos e 38 segundos - Ir ao canal - Prime Control - 90 visualizações - há 1 ano - assistir o vídeo
+    #Wait Until Element Is Visible       accessibility_id=Prime Experts - Parceria entre Prime Control e UniBrasil - 3 minutos e 38 segundos - Ir ao canal - Prime Control - 156 visualizações - há 1 ano - assistir o vídeo
+    #Click Element                       accessibility_id=Prime Experts - Parceria entre Prime Control e UniBrasil - 3 minutos e 38 segundos - Ir ao canal - Prime Control - 156 visualizações - há 1 ano - assistir o vídeo
+    Wait Until Element Is Visible        xpath=(//android.widget.ImageView[@content-desc="Action menu"])[1]
+    Click Element At Coordinates         549     470
 
 Quando clicar em Inscrever-se
-    Wait Until Element Is Visible       accessibility_id=Inscreva-se em Prime Control.
-    Click Element                       accessibility_id=Inscreva-se em Prime Control.
-    Click Element                       accessibility_id=Inscreva-se em Prime Control.
+    Wait Until Page Contains Element    xpath=//*[contains(@text,'SUBSCRIBE')]       5s
+    Wait Until Element Is Visible       accessibility_id=Subscribe to Prime Control.
+    Click Element                       accessibility_id=Subscribe to Prime Control.
 
 Então será apresentado como Inscrito
-    Wait Until Element Is Visible       accessibility_id=Cancelar inscrição de Prime Control.
+    Wait Until Element Is Visible       accessibility_id=Unsubscribe from Prime Control.
 
  
 ######################################
