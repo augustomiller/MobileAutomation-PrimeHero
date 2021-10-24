@@ -6,7 +6,7 @@
 ## Testes Mobile 📱
   
   
-Objetivo 🎯  &nbsp;&nbsp;Utilizando as melhores tecnologias atuais como, Java, Appium, UIautomatorviewer Android Studio, realizei uma bateria de testes no aplicativo Youtube, para validar suas funcionalidades.
+Objetivo 🎯  &nbsp;&nbsp;Utilizando as melhores tecnologias atuais como, Robot Framework, Appium, UIautomatorviewer Android Studio, realizei uma bateria de testes no aplicativo Youtube, para validar suas funcionalidades.
   
 </div>
   
