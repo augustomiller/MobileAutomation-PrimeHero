@@ -184,29 +184,28 @@ Acionamos o botão play para iniciar
 
 ## Inicinado...
 
-Com o Emulador e o Appium já iniciado, vamos clicar em Start Inspector Session 🔎
+Com o Emulador e o Appium já iniciado, vamos clicar em Start Inspector Session
 
-![StartInspectorSession](https://user-images.githubusercontent.com/990877/134578713-f7979a65-560d-4da5-8c8f-045fe0efc85b.png)
+![Screen Shot 2021-10-24 at 10 02 01 (2)](https://user-images.githubusercontent.com/990877/138595385-6055555c-def7-4a35-bacf-e08d3aa6b0ad.png)
 
 Vamos configurar as Desired Capabilities, essas são as informações necessárias para podermos conectar em nosso aparelho.
 
-![DesiredCapabilities](https://user-images.githubusercontent.com/990877/134579231-e0684b9d-38db-46ad-9e48-6216751c6f0b.png)
-
-Para encontrar o nome do nosso device via linha de comando
+![DesiredCapabilities](https://user-images.githubusercontent.com/990877/138595283-36099ab4-e0aa-4f1d-88f0-1a90f400ef27.png)
 
 ```script
 {
   "platformName": "Android",
-  "deviceName": "emulator-5554",
+  "deviceName": "RX8M80897QT",
   "automationName": "uiautomator2",
-  "appPackage": "com.google.android.deskclock",
-  "appActivity": "com.android.deskclock.DeskClock"
+  "appPackage": "com.google.android.youtube",
+  "appActivity": "com.google.android.youtube.HomeActivity",
+  "autoGrantPermissions": "true"
 }
 ```
 
 Para encontrar os atributos necessários para popular a Desired Capabilities usaremos o App APK INFO
 
-![ApkInfo](https://user-images.githubusercontent.com/990877/134579778-a11c94ad-6995-4275-852b-5f9de8ad2ee6.png)
+![ApkInfo](https://user-images.githubusercontent.com/990877/138595237-cb72ffec-3ee3-4f06-a0e5-fa62a6f6e835.png)
 
 Após salvarmos as configurações vamos em Start Session
 
