@@ -45,9 +45,9 @@ Fechar aplicativo
     Capture Page Screenshot
     Close Application
     
-######################################
-# Caso de Teste 01: Logar no YouTube #
-######################################
+#####################################################
+# Caso de Teste 01: Pesquisar canal “Prime Experts” #
+#####################################################
 Dado que o cliente esteja na tela de Home
     Wait Until Element Is Visible       xpath=//android.widget.ImageView[@content-desc="Conta"]
     Wait Until Element Is Visible       accessibility_id=Pesquisar
