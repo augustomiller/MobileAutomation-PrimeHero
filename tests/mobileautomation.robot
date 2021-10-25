@@ -115,11 +115,11 @@ Usar swipe de tela até o 10 item da tela
 
     FOR  ${y}  IN RANGE  0  10
         Swipe  580  1500  580  700
-        Sleep  1
+        Sleep  0.5
     END
 
 Clicar no vídeo
-     Click Element At Coordinates          540    1430
+    Click Element At Coordinates          540    1430
 
-    Wait Until Page Contains Element      xpath=//*[contains(@text,'#10 NOS VÍDEOS EM ALTA')]
+    Wait Until Page Contains Element       xpath=//*[contains(@text,'#10 NOS VÍDEOS EM ALTA')]
     # Wait Until Page Contains Element      xpath=//*[contains(@text,'Money')]
