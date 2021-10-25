@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211024 21:48:09.226" rpa="false" schemaversion="2">
+<suite id="s1" name="Mobileautomation" source="C:\Users\Maic Miller\Documents\ProjetosGitHub\MobileAutomation-PrimeHero\tests\mobileautomation.robot">
+<test id="s1-t1" name="Caso de Teste 01: Pesquisar canal “Prime Experts”">
+<kw name="Abrir aplicativo" type="SETUP">
+<kw name="Set Appium Timeout" library="AppiumLibrary">
+<arg>60</arg>
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<status status="PASS" starttime="20211024 21:48:09.482" endtime="20211024 21:48:09.483"/>
+</kw>
+<kw name="Open Application" library="AppiumLibrary">
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=RX8M80897QT</arg>
+<arg>automationName=uiautomator2</arg>
+<arg>appPackage=com.google.android.youtube</arg>
+<arg>appActivity=com.google.android.youtube.HomeActivity</arg>
+<arg>autoGrantPermissions=true</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20211024 21:48:09.483" endtime="20211024 21:48:25.258"/>
+</kw>
+<status status="PASS" starttime="20211024 21:48:09.482" endtime="20211024 21:48:25.258"/>
+</kw>
+<kw name="Dado que o cliente esteja na tela de Home">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>xpath=//android.widget.ImageView[@content-desc="Conta"]</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211024 21:48:25.259" endtime="20211024 21:48:31.976"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>accessibility_id=Pesquisar</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211024 21:48:31.976" endtime="20211024 21:48:32.325"/>
+</kw>
+<status status="PASS" starttime="20211024 21:48:25.259" endtime="20211024 21:48:32.325"/>
+</kw>
+<kw name="E pesquise um vídeo sobre &quot;Prime Experts&quot;" sourcename="E pesquise um vídeo sobre &quot;${PESQUISA_VIDEO}&quot;">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>accessibility_id=Pesquisar</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211024 21:48:32.330" level="INFO">Clicking element 'accessibility_id=Pesquisar'.</msg>
+<status status="PASS" starttime="20211024 21:48:32.327" endtime="20211024 21:48:33.219"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>id=search_edit_text</arg>
+<arg>3s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20211024 21:48:33.219" endtime="20211024 21:48:35.037"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>id=search_edit_text</arg>
+<arg>${PESQUISA_VIDEO}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20211024 21:48:35.039" level="INFO">Typing text 'Prime Experts' into text field 'id=search_edit_text'</msg>
+<status status="PASS" starttime="20211024 21:48:35.037" endtime="20211024 21:48:35.221"/>
+</kw>
+<kw name="Press Keycode" library="AppiumLibrary">
+<arg>66</arg>
+<doc>Sends a press of keycode to the device.</doc>
+<status status="PASS" starttime="20211024 21:48:35.222" endtime="20211024 21:48:36.567"/>
+</kw>
+<status status="PASS" starttime="20211024 21:48:32.326" endtime="20211024 21:48:36.567"/>
+</kw>
+<kw name="E acessar o canal da Prime">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>xpath=(//android.widget.ImageView[@content-desc="Ir ao canal"])[1]</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211024 21:48:36.568" endtime="20211024 21:48:38.620"/>
+</kw>
+<kw name="Click Element At Coordinates" library="AppiumLibrary">
+<arg>549</arg>
+<arg>470</arg>
+<doc>click element at a certain coordinate</doc>
+<msg timestamp="20211024 21:48:38.622" level="INFO">Pressing at (549, 470).</msg>
+<status status="PASS" starttime="20211024 21:48:38.620" endtime="20211024 21:48:40.680"/>
+</kw>
+<status status="PASS" starttime="20211024 21:48:36.567" endtime="20211024 21:48:40.680"/>
+</kw>
+<kw name="Quando clicar em Inscrever-se">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>xpath=//*[contains(@text,'INSCREVER-SE')]</arg>
+<arg>5s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20211024 21:48:40.681" endtime="20211024 21:48:43.342"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//*[contains(@text,'INSCREVER-SE')]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211024 21:48:43.344" level="INFO">Clicking element 'xpath=//*[contains(@text,'INSCREVER-SE')]'.</msg>
+<status status="PASS" starttime="20211024 21:48:43.342" endtime="20211024 21:48:44.716"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>accessibility_id=Cancelar inscrição de Prime Control.</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211024 21:48:44.717" endtime="20211024 21:48:45.377"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>accessibility_id=Cancelar inscrição de Prime Control.</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211024 21:48:45.379" level="INFO">Clicking element 'accessibility_id=Cancelar inscrição de Prime Control.'.</msg>
+<status status="PASS" starttime="20211024 21:48:45.377" endtime="20211024 21:48:45.624"/>
+</kw>
+<status status="PASS" starttime="20211024 21:48:40.681" endtime="20211024 21:48:45.624"/>
+</kw>
+<kw name="Então será apresentado como Inscrito">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>accessibility_id=Cancelar inscrição de Prime Control.</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211024 21:48:45.626" endtime="20211024 21:48:46.664"/>
+</kw>
+<status status="PASS" starttime="20211024 21:48:45.625" endtime="20211024 21:48:46.664"/>
+</kw>
+<kw name="Fechar aplicativo" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20211024 21:48:47.309" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-1.png"&gt;&lt;img src="appium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211024 21:48:46.666" endtime="20211024 21:48:47.309"/>
+</kw>
+<kw name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" starttime="20211024 21:48:47.309" endtime="20211024 21:48:48.671"/>
+</kw>
+<status status="PASS" starttime="20211024 21:48:46.665" endtime="20211024 21:48:48.671"/>
+</kw>
+<tag>PESQUISAR_CANAL</tag>
+<status status="PASS" starttime="20211024 21:48:09.481" endtime="20211024 21:48:48.677"/>
+</test>
+<doc>Testes Mobile PrimeHero Experts</doc>
+<status status="PASS" starttime="20211024 21:48:09.229" endtime="20211024 21:48:48.684"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">PESQUISAR_CANAL</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Mobileautomation">Mobileautomation</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

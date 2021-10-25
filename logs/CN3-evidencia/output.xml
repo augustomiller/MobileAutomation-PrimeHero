@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211024 20:44:11.705" rpa="false" schemaversion="2">
+<suite id="s1" name="Mobileautomation" source="C:\Users\Maic Miller\Documents\ProjetosGitHub\MobileAutomation-PrimeHero\tests\mobileautomation.robot">
+<test id="s1-t1" name="Caso de Teste 03: Usar método Swipe na tela">
+<kw name="Abrir aplicativo" type="SETUP">
+<kw name="Set Appium Timeout" library="AppiumLibrary">
+<arg>60</arg>
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<status status="PASS" starttime="20211024 20:44:12.156" endtime="20211024 20:44:12.156"/>
+</kw>
+<kw name="Open Application" library="AppiumLibrary">
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=RX8M80897QT</arg>
+<arg>automationName=uiautomator2</arg>
+<arg>appPackage=com.google.android.youtube</arg>
+<arg>appActivity=com.google.android.youtube.HomeActivity</arg>
+<arg>autoGrantPermissions=true</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20211024 20:44:12.157" endtime="20211024 20:44:32.983"/>
+</kw>
+<status status="PASS" starttime="20211024 20:44:12.155" endtime="20211024 20:44:32.983"/>
+</kw>
+<kw name="Entrar no menu “Explorar”">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//*[contains(@text,'Explorar')]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211024 20:44:32.987" level="INFO">Clicking element 'xpath=//*[contains(@text,'Explorar')]'.</msg>
+<status status="PASS" starttime="20211024 20:44:32.985" endtime="20211024 20:44:39.166"/>
+</kw>
+<status status="PASS" starttime="20211024 20:44:32.984" endtime="20211024 20:44:39.167"/>
+</kw>
+<kw name="Usar swipe de tela até o 10 item da tela">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>class=android.view.ViewGroup</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211024 20:44:39.168" endtime="20211024 20:44:41.601"/>
+</kw>
+<for flavor="IN RANGE">
+<var>${y}</var>
+<value>0</value>
+<value>10</value>
+<iter>
+<var name="${y}">0</var>
+<kw name="Swipe" library="AppiumLibrary">
+<arg>580</arg>
+<arg>1500</arg>
+<arg>580</arg>
+<arg>700</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" starttime="20211024 20:44:41.601" endtime="20211024 20:44:43.394"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211024 20:44:44.403" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211024 20:44:43.394" endtime="20211024 20:44:44.404"/>
+</kw>
+<status status="PASS" starttime="20211024 20:44:41.601" endtime="20211024 20:44:44.404"/>
+</iter>
+<iter>
+<var name="${y}">1</var>
+<kw name="Swipe" library="AppiumLibrary">
+<arg>580</arg>
+<arg>1500</arg>
+<arg>580</arg>
+<arg>700</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" starttime="20211024 20:44:44.405" endtime="20211024 20:44:46.305"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211024 20:44:47.315" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211024 20:44:46.305" endtime="20211024 20:44:47.315"/>
+</kw>
+<status status="PASS" starttime="20211024 20:44:44.404" endtime="20211024 20:44:47.315"/>
+</iter>
+<iter>
+<var name="${y}">2</var>
+<kw name="Swipe" library="AppiumLibrary">
+<arg>580</arg>
+<arg>1500</arg>
+<arg>580</arg>
+<arg>700</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" starttime="20211024 20:44:47.316" endtime="20211024 20:44:49.299"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211024 20:44:50.313" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211024 20:44:49.299" endtime="20211024 20:44:50.313"/>
+</kw>
+<status status="PASS" starttime="20211024 20:44:47.315" endtime="20211024 20:44:50.314"/>
+</iter>
+<iter>
+<var name="${y}">3</var>
+<kw name="Swipe" library="AppiumLibrary">
+<arg>580</arg>
+<arg>1500</arg>
+<arg>580</arg>
+<arg>700</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" starttime="20211024 20:44:50.314" endtime="20211024 20:44:52.771"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211024 20:44:53.780" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211024 20:44:52.771" endtime="20211024 20:44:53.780"/>
+</kw>
+<status status="PASS" starttime="20211024 20:44:50.314" endtime="20211024 20:44:53.780"/>
+</iter>
+<iter>
+<var name="${y}">4</var>
+<kw name="Swipe" library="AppiumLibrary">
+<arg>580</arg>
+<arg>1500</arg>
+<arg>580</arg>
+<arg>700</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" starttime="20211024 20:44:53.781" endtime="20211024 20:44:55.763"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211024 20:44:56.771" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211024 20:44:55.763" endtime="20211024 20:44:56.771"/>
+</kw>
+<status status="PASS" starttime="20211024 20:44:53.781" endtime="20211024 20:44:56.771"/>
+</iter>
+<iter>
+<var name="${y}">5</var>
+<kw name="Swipe" library="AppiumLibrary">
+<arg>580</arg>
+<arg>1500</arg>
+<arg>580</arg>
+<arg>700</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" starttime="20211024 20:44:56.772" endtime="20211024 20:44:58.811"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211024 20:44:59.820" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211024 20:44:58.811" endtime="20211024 20:44:59.820"/>
+</kw>
+<status status="PASS" starttime="20211024 20:44:56.771" endtime="20211024 20:44:59.820"/>
+</iter>
+<iter>
+<var name="${y}">6</var>
+<kw name="Swipe" library="AppiumLibrary">
+<arg>580</arg>
+<arg>1500</arg>
+<arg>580</arg>
+<arg>700</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" starttime="20211024 20:44:59.821" endtime="20211024 20:45:02.278"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211024 20:45:03.288" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211024 20:45:02.278" endtime="20211024 20:45:03.289"/>
+</kw>
+<status status="PASS" starttime="20211024 20:44:59.820" endtime="20211024 20:45:03.289"/>
+</iter>
+<iter>
+<var name="${y}">7</var>
+<kw name="Swipe" library="AppiumLibrary">
+<arg>580</arg>
+<arg>1500</arg>
+<arg>580</arg>
+<arg>700</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" starttime="20211024 20:45:03.289" endtime="20211024 20:45:05.276"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211024 20:45:06.278" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211024 20:45:05.277" endtime="20211024 20:45:06.278"/>
+</kw>
+<status status="PASS" starttime="20211024 20:45:03.289" endtime="20211024 20:45:06.278"/>
+</iter>
+<iter>
+<var name="${y}">8</var>
+<kw name="Swipe" library="AppiumLibrary">
+<arg>580</arg>
+<arg>1500</arg>
+<arg>580</arg>
+<arg>700</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" starttime="20211024 20:45:06.278" endtime="20211024 20:45:08.245"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211024 20:45:09.254" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211024 20:45:08.245" endtime="20211024 20:45:09.254"/>
+</kw>
+<status status="PASS" starttime="20211024 20:45:06.278" endtime="20211024 20:45:09.254"/>
+</iter>
+<iter>
+<var name="${y}">9</var>
+<kw name="Swipe" library="AppiumLibrary">
+<arg>580</arg>
+<arg>1500</arg>
+<arg>580</arg>
+<arg>700</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" starttime="20211024 20:45:09.254" endtime="20211024 20:45:11.206"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211024 20:45:12.220" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211024 20:45:11.206" endtime="20211024 20:45:12.220"/>
+</kw>
+<status status="PASS" starttime="20211024 20:45:09.254" endtime="20211024 20:45:12.220"/>
+</iter>
+<status status="PASS" starttime="20211024 20:44:41.601" endtime="20211024 20:45:12.220"/>
+</for>
+<status status="PASS" starttime="20211024 20:44:39.168" endtime="20211024 20:45:12.220"/>
+</kw>
+<kw name="Clicar no vídeo">
+<kw name="Click Element At Coordinates" library="AppiumLibrary">
+<arg>540</arg>
+<arg>1430</arg>
+<doc>click element at a certain coordinate</doc>
+<msg timestamp="20211024 20:45:12.224" level="INFO">Pressing at (540, 1430).</msg>
+<status status="PASS" starttime="20211024 20:45:12.222" endtime="20211024 20:45:15.467"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>xpath=//*[contains(@text,'Money')]</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20211024 20:45:15.467" endtime="20211024 20:45:42.241"/>
+</kw>
+<status status="PASS" starttime="20211024 20:45:12.221" endtime="20211024 20:45:42.241"/>
+</kw>
+<kw name="Fechar aplicativo" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20211024 20:45:43.530" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-1.png"&gt;&lt;img src="appium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211024 20:45:42.242" endtime="20211024 20:45:43.530"/>
+</kw>
+<kw name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" starttime="20211024 20:45:43.530" endtime="20211024 20:45:44.702"/>
+</kw>
+<status status="PASS" starttime="20211024 20:45:42.242" endtime="20211024 20:45:44.702"/>
+</kw>
+<tag>SWIPE-SCREEN</tag>
+<status status="PASS" starttime="20211024 20:44:12.154" endtime="20211024 20:45:44.702"/>
+</test>
+<doc>Testes Mobile PrimeHero Experts</doc>
+<status status="PASS" starttime="20211024 20:44:11.708" endtime="20211024 20:45:44.704"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">SWIPE-SCREEN</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Mobileautomation">Mobileautomation</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
