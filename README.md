@@ -40,7 +40,7 @@ Objetivo 🎯  &nbsp;&nbsp;Utilizando as melhores tecnologias atuais como, Robot
 
 ## Tecnologias
 
-- [JDK 8](https://www.oracle.com/br/java/technologies/javase/javase8-archive-downloads.html)
+- [JDK 8](https://www.oracle.com/java/technologies/downloads/#java8-windows)
 - [PyCharm](https://www.jetbrains.com/pt-br/pycharm/)
 - [Appium](https://appium.io/)
 - [Vysor](https://www.vysor.io/)
