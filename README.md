@@ -41,7 +41,7 @@ Objetivo 🎯  &nbsp;&nbsp;Utilizando as melhores tecnologias atuais como, Robot
 ## Tecnologias
 
 - [JDK 8](https://www.oracle.com/java/technologies/downloads/#java8-windows)
-- [PyCharm](https://www.jetbrains.com/pt-br/pycharm/)
+- [Android Studio](https://developer.android.com/studio)
 - [Appium](https://appium.io/)
 - [Vysor](https://www.vysor.io/)
 - [Bash](https://www.gnu.org/software/bash/)
@@ -130,6 +130,11 @@ uiautomator() {
         /Users/maicmiller/Library/Android/sdk/tools/bin/uiautomatorviewer
 }
 ```
+## Instalação do Android Studio
+
+- [Android Studio](https://developer.android.com/studio)
+
+Efetue a instalação normalmente.
 
 ## Ambiente Android Studio
 
@@ -137,14 +142,19 @@ uiautomator() {
 
 ![1](https://user-images.githubusercontent.com/990877/134569253-c7eda8a6-f6dc-4770-8b97-4cbd4081bece.png)
 ![2](https://user-images.githubusercontent.com/990877/134569053-7fab890b-4732-47cb-96a8-02f7c39d0811.png)
+Clique no botão SDK MAnager
 ![3](https://user-images.githubusercontent.com/990877/134569683-e311b458-66dd-4411-a50c-878eb019cb28.png)
-![4](https://user-images.githubusercontent.com/990877/134570019-d0bbf3af-4c3f-407a-adb0-e81285e42668.png)
+![4](https://user-images.githubusercontent.com/990877/142311556-87e3c582-37a3-494f-a4b9-cf63e43e0feb.png)
 
 Pegamos o valor do Android SDK location para configurar o Android Home
+No MacOSX
 ```script
 /Users/<utilizador>/Library/Android/sdk
 ```
+
 ### Variáveis e ambiente para o Android Home
+
+## No MacOSX
 
 Destino das varáveis de ambiente ⇢ ~ (home)
 
@@ -166,7 +176,44 @@ source ~/.zshrc
 echo $ANDROID_HOME
 ```
 
-Comandos adb
+## No Windows
+
+SDK Location no windows
+```script
+C:\Users\maicm\AppData\Local\Android\Sdk
+```
+## Configurar as Variáveis de ambiente do Android Home
+
+Variáveis de Ambiente
+
+![VA-ANDROIDHOME](https://user-images.githubusercontent.com/990877/142318359-c8121bce-5d5c-48ba-b0c4-6cf3d01b1a23.png)
+
+Variáveis de Sistema
+
+![VA-ANDROIDHOME-SISTEMA](https://user-images.githubusercontent.com/990877/142319924-20458ffd-602d-4ceb-b387-7d32ff53b0dd.png)
+
+Agora vamos adicionar as seguintes variáveis nos Path de Variaveis Ambiente:
+
+```script
+%ANDROID_HOME%\tools
+%ANDROID_HOME%\tools\bin
+%ANDROID_HOME%\platform-tools
+```
+![VAAH](https://user-images.githubusercontent.com/990877/142323409-5e718cf7-d78b-4c21-be8c-e48ee160881e.png)
+
+
+Agora vamos adicionar as seguintes variáveis nos Path de Variaveis de Sistema:
+
+```script
+%ANDROID_HOME%\tools
+%ANDROID_HOME%\tools\bin
+%ANDROID_HOME%\platform-tools
+```
+![VAAH-sis](https://user-images.githubusercontent.com/990877/142326668-76abc984-fb9d-4623-8447-a3a9f6e05af3.png)
+
+### Checando a instalação
+
+No Pronpt de Comando digite:
 ```script
 adb
 ```
@@ -179,6 +226,10 @@ adb devices
 Comando uiautomatorviewer
 ```script
 sudo uiautomatorviewer
+```
+No windows
+```script
+uiautomatorviewer
 ```
 
 ## Criar um novo Virtual Device
