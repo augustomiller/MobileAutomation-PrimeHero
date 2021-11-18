@@ -108,27 +108,6 @@ java -version
 ```
 ![java-version](https://user-images.githubusercontent.com/990877/142301705-e1079d76-75fe-4731-986d-0cc23eea9687.png)
 
-
-Path do JDK no MacOSX
-```script
-/Library/Java/JavaVirtualMachines/jdk1.8.0_301.jdk
-```
-
-### Variáveis e ambiente para o uiautomator
-
-Path das varáveis de ambiente ⇢ ~ (home)
-
-```script
-➜ vim ~/.zshrc
-```
-```script
-uiautomator() {
-        export export PATH=$JAVA_HOME/Library/Java/JavaVirtualMachines/jdk1.8.0_301.jdk/Contents/Home:$PATH
-        export ANDROID_HOME=/Users/maicmiller/Library/Android/sdk
-        export PATH=$PATH:$ANDROID_HOME/platform-tools:$ANDROID_HOME/build-tools:$ANDROID_HOME/tools
-        /Users/maicmiller/Library/Android/sdk/tools/bin/uiautomatorviewer
-}
-```
 ## Instalação do Android Studio
 
 - [Android Studio](https://developer.android.com/studio)
@@ -156,6 +135,28 @@ No MacOSX
 ## No MacOSX
 
 Destino das varáveis de ambiente ⇢ ~ (home)
+
+Path do JDK no MacOSX
+
+```script
+/Library/Java/JavaVirtualMachines/jdk1.8.0_301.jdk
+```
+
+### Variáveis e ambiente para o uiautomator
+
+Path das varáveis de ambiente ⇢ ~ (home)
+
+```script
+➜ vim ~/.zshrc
+```
+```script
+uiautomator() {
+        export export PATH=$JAVA_HOME/Library/Java/JavaVirtualMachines/jdk1.8.0_301.jdk/Contents/Home:$PATH
+        export ANDROID_HOME=/Users/maicmiller/Library/Android/sdk
+        export PATH=$PATH:$ANDROID_HOME/platform-tools:$ANDROID_HOME/build-tools:$ANDROID_HOME/tools
+        /Users/maicmiller/Library/Android/sdk/tools/bin/uiautomatorviewer
+}
+```
 
 ```script
 ➜ vim ~/.zshrc
