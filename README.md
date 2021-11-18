@@ -239,11 +239,22 @@ uiautomatorviewer
 ![10](https://user-images.githubusercontent.com/990877/134572359-2beb66e8-3440-416c-b9d4-d04dfb437a6d.png)
 ![11](https://user-images.githubusercontent.com/990877/134572540-3c70d849-f8aa-49cf-a4e1-1cf9f4ad1a38.png)
 
-### podemos fechar o Android Studio, vamos levantar o emulator via terminal.
+### Podemos fechar o Android Studio, vamos levantar o emulator via terminal.
+
+Vamos listar nossas AVD's:
 
 ```script
-emulator @stffAVD &
+emulator -list-avds
 ```
+Vamos executar nossa AVD via terminal (Requer menos processamento do seu PC ;) )
+OBS:. Para executar esse comando precisamos estar dentro da pasta de origem do emulator!
+
+Ex: C:\Users\maicm\AppData\Local\Android\Sdk\tools>
+
+```script
+emulator @Seu_AVD
+```
+
 ![12](https://user-images.githubusercontent.com/990877/134573510-4dabb3de-78b6-46cb-9598-6530af5aa5f6.png)
 
 ## Instalação do Appium
