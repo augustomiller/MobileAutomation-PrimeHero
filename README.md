@@ -54,10 +54,63 @@ Objetivo 🎯  &nbsp;&nbsp;Utilizando as melhores tecnologias atuais como, Robot
 - [Appium Docs](https://appium.io/docs/en/about-appium/intro/)
 - [Cucumber Docs](https://cucumber.io/docs/cucumber/)
 
+## Steps
+
+- [Instalar o JDK8](https://www.oracle.com/java/technologies/downloads/#java8-windows)
+
+## PRIMEIRO PASSO
+
 ## Variáveis de Ambiente
 
+Windows + R
+```script
+control
+```
+Após abrir o Painel de controle vamos em:
+Sistema e Segurança -> Sistema -> Configuração Avançada do Sistema -> Variáveis de Ambiente.
 
-Path do JDK
+### JDK
+
+É o caminho onde o JDK foi instalado: C:\Program Files\Java\jdk1.8.0_311
+
+![JAVA_HOME](https://user-images.githubusercontent.com/990877/142299453-6ee32b96-fde1-446d-b056-7fbc3dd19866.png)
+
+Vamos fazer a mesma coisa para a Nova Variável de Sistema
+
+![JAVA_HOME_SISTEMA](https://user-images.githubusercontent.com/990877/142299838-5142c036-bb51-4cba-ba17-b44e00acf468.png)
+
+### Vamos efetuar o mesmo procedimento para a JRE
+
+### JRE
+
+É o caminho onde o JRE foi instalado: C:\Program Files\Java\jre1.8.0_311
+
+Variável do Usuário
+![JRE_HOME](https://user-images.githubusercontent.com/990877/142300367-c9f979cd-ca30-47b4-88b1-51adadac1c54.png)
+
+Variável de Sistema
+
+
+![JRE_HOME_SISTEMA](https://user-images.githubusercontent.com/990877/142300578-53db6483-c1fa-4d4e-8219-91b3618627ad.png)
+
+
+## SEGUNDO PASSO, CONFIGURAR O PATH DA PASTA BIN DO JDK.
+
+Variável de Ambiente
+![JAVA_HOME_bin](https://user-images.githubusercontent.com/990877/142301073-94ca13c2-9372-4e15-818f-83c7b00b57a0.png)
+
+Mesmo procedimento para a Variável de Sistema
+![JAVA_HOME_bin_sistema](https://user-images.githubusercontent.com/990877/142301326-40023eb6-c831-4e5e-bd77-0aef3f4b5c1b.png)
+![ok](https://user-images.githubusercontent.com/990877/142301426-fd27ca8b-f14d-4a02-9019-b937029f69c4.png)
+
+Vamos verificar a instalação do Java no terminal:
+```script
+java -version
+```
+![java-version](https://user-images.githubusercontent.com/990877/142301705-e1079d76-75fe-4731-986d-0cc23eea9687.png)
+
+
+Path do JDK no MacOSX
 ```script
 /Library/Java/JavaVirtualMachines/jdk1.8.0_301.jdk
 ```
