@@ -52,7 +52,6 @@ Objetivo 🎯  &nbsp;&nbsp;Utilizando as melhores tecnologias atuais como, Robot
 - [Android Studio Docs](https://developer.android.com/docs)
 - [Eclipse Docs](https://help.eclipse.org/latest/index.jsp)
 - [Appium Docs](https://appium.io/docs/en/about-appium/intro/)
-- [Cucumber Docs](https://cucumber.io/docs/cucumber/)
 
 ## Steps
 
